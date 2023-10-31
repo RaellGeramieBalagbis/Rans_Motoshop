@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01538EDA-ED8C-4111-9EB2-873B0D6FB29C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.FakeDb, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.FakeDb.2.0.1\lib\net471\Sitecore.FakeDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\ADMIN\addAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\addAdmin.Designer.cs">
+      <DependentUpon>addAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\EditAdmin- Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\EditAdmin- Copy.Designer.cs">
+      <DependentUpon>EditAdmin- Copy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\EditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\EditSupplier.Designer.cs">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\EditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\EditCustomer.Designer.cs">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\addSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\addSupplier.Designer.cs">
+      <DependentUpon>addSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\addCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\addCustomer.Designer.cs">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\addProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\addProducts.Designer.cs">
+      <DependentUpon>addProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\AdminProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\AdminProducts.Designer.cs">
+      <DependentUpon>AdminProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CUSTOMER\customerAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CUSTOMER\customerAccount.Designer.cs">
+      <DependentUpon>customerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CUSTOMER\ViewProductSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CUSTOMER\ViewProductSupplier.Designer.cs">
+      <DependentUpon>ViewProductSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CUSTOMER\CustomerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CUSTOMER\CustomerHome.Designer.cs">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageAccountsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageAccountsAdmin.Designer.cs">
+      <DependentUpon>ManageAccountsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageAccountsSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageAccountsSupplier.Designer.cs">
+      <DependentUpon>ManageAccountsSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageAccounts.Designer.cs">
+      <DependentUpon>ManageAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\adminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\adminHome.Designer.cs">
+      <DependentUpon>adminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\createnewaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\createnewaccount.Designer.cs">
+      <DependentUpon>createnewaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADMIN\ManageProducts.Designer.cs">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Supplier\addProductsSupplier1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supplier\addProductsSupplier1.Designer.cs">
+      <DependentUpon>addProductsSupplier1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Supplier\supplierAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supplier\supplierAccount.Designer.cs">
+      <DependentUpon>supplierAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Supplier\supplierHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supplier\supplierHome.Designer.cs">
+      <DependentUpon>supplierHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Supplier\SupplierProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supplier\SupplierProducts.Designer.cs">
+      <DependentUpon>SupplierProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Connection.cs" />
+    <Compile Include="Functions\Function.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <EmbeddedResource Include="Forms\ADMIN\addAdmin.resx">
+      <DependentUpon>addAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\EditAdmin- Copy.resx">
+      <DependentUpon>EditAdmin- Copy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\EditSupplier.resx">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\EditCustomer.resx">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\addSupplier.resx">
+      <DependentUpon>addSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\addCustomer.resx">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\addProducts.resx">
+      <DependentUpon>addProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\AdminProducts.resx">
+      <DependentUpon>AdminProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CUSTOMER\customerAccount.resx">
+      <DependentUpon>customerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CUSTOMER\ViewProductSupplier.resx">
+      <DependentUpon>ViewProductSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CUSTOMER\CustomerHome.resx">
+      <DependentUpon>CustomerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\ManageAccountsAdmin.resx">
+      <DependentUpon>ManageAccountsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\ManageAccountsSupplier.resx">
+      <DependentUpon>ManageAccountsSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\ManageAccounts.resx">
+      <DependentUpon>ManageAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\adminHome.resx">
+      <DependentUpon>adminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\createnewaccount.resx">
+      <DependentUpon>createnewaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADMIN\ManageProducts.resx">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supplier\addProductsSupplier1.resx">
+      <DependentUpon>addProductsSupplier1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supplier\supplierAccount.resx">
+      <DependentUpon>supplierAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supplier\supplierHome.resx">
+      <DependentUpon>supplierHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supplier\SupplierProducts.resx">
+      <DependentUpon>SupplierProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppData\" />
+    <Folder Include="Model\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
